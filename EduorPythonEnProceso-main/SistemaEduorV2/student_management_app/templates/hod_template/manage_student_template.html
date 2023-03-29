@@ -93,8 +93,8 @@
                                 <td>{{ student.admin.last_login }}</td>
                                 <td>{{ student.admin.date_joined }}</td>
                                 <td>
-                                    <a href="{% url 'edit_student' student.admin.id %}" class="btn btn-success">Edit</a> 
-                                    <a href="{% url 'delete_student' student.admin.id %}" class="btn btn-danger">Delete</a>
+                                    <a href="{% url 'edit_student' student.admin.id %}" class="btn btn-success">Editar</a> 
+                                    <a href="{% url 'delete_student' student.admin.id %}" class="btn btn-danger">Borrar</a>
                                 </td>
                                 </tr>
                                 {% endfor %}
