@@ -36,10 +36,10 @@ def doLogin(request):
                 # return HttpResponse("Student Login")
                 return redirect('student_home')
             else:
-                messages.error(request, "Invalid Login!")
+                messages.error(request, "Inicio de Seccion invalida!")
                 return redirect('login')
         else:
-            messages.error(request, "Invalid Login Credentials!")
+            messages.error(request, "Credenciales Invalidas!")
             #return HttpResponseRedirect("/")
             return redirect('login')
 

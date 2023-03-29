@@ -1,0 +1,12 @@
+Estudiante
+correo: student@gmail.com
+contraseña: student
+Admin
+correo: admin@gmail.com
+contraseña: admin
+Maestro
+correo:
+contraseña:
+
+URL SITIO :
+https://eduorpythonenproceso-production.up.railway.app/
