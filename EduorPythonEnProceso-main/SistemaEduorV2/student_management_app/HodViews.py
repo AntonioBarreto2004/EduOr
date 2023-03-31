@@ -355,6 +355,7 @@ def add_student_save(request):
             course_id = form.cleaned_data['course_id']
             gender = form.cleaned_data['gender']
 
+        
 
             # Getting Profile Pic first
             # First Check whether the file is selected or not
@@ -460,7 +461,7 @@ def edit_student_save(request):
     else:
         student_id = request.session.get('student_id')
         if student_id == None:
-            return redirect('/manage_student')
+            return redirect('manage_student')
 
         form = EditStudentForm(request.POST, request.FILES)
         if form.is_valid():

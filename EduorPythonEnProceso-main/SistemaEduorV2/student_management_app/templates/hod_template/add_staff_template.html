@@ -1,7 +1,7 @@
 {% extends 'hod_template/base_template.html' %}
 
 {% block page_title %}
-    Agregar Admin
+    Agregar Maestro
 {% endblock page_title %}
 
 {% block main_content %}
@@ -16,7 +16,7 @@
                     <!-- general form elements -->
                     <div class="card card-primary">
                     <div class="card-header">
-                        <h3 class="card-title">Agregar Admin</h3>
+                        <h3 class="card-title">Agregar Maestro</h3>
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
@@ -63,7 +63,7 @@
 
                             <div class="form-group">
                                 <label>contraseña</label>
-                                <input type="password" class="form-control" name="password" placeholder="contraseña">
+                                <input type="password" class="form-control" name="password" placeholder="contraseña" required pattern="(?=.*\d)(?=.*[!@#$%^&*()\-_=+{};:,<.>/?`~|[\]'])[A-Za-z\d!@#$%^&*()\-_=+{};:,<.>/?`~|[\]']{8,}" title="La contraseña debe tener al menos 8 caracteres, al menos un número y al menos un caracter especial.">
                             </div>
 
                             <div class="form-group">
@@ -88,7 +88,7 @@
                         <!-- /.card-body -->
 
                         <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Agregar Admin</button>
+                        <button type="submit" class="btn btn-primary">Agregar Maestro</button>
                         </div>
                     </form>
                     </div>
